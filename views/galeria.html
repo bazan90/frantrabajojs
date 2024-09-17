@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+<nav class="navbar">
+    <div class="container">
+        <ul class="navbar-nav">
+            <li><a href=".././index.html">Inicio</a></li>
+            <li><a href="./galeria.html" class="active">Galería</a></li>
+            <li><a href="./presupuesto.html">Presupuesto</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+    <section class="galeria">
+        <div class="container">
+            <h2>Galería</h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/images/1.jpg" alt="Imagen 1" width="400" height="400">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/2.jpg" alt="Imagen 2" width="400" height="400">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/3.jpg" alt="Imagen 3" width="600" height="400">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/4.jpg" alt="Imagen 4" width="600" height="400">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/5.jpg" alt="Imagen 5" width="600" height="400">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/6.jpg" alt="Imagen 6" width="600" height="400">
+                    </div>
+                </div>
+                <button class="carousel-control prev" onclick="moveCarousel(-1)">&#10094;</button>
+                <button class="carousel-control next" onclick="moveCarousel(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Programador Web. Todos los derechos reservados.</p>
+            <p>Dirección: Calle Ficticia 123, Ciudad, País</p>
+            <div class="social-links">
+                <a href="#"><img src="../assets/images/facebook.png" alt="Facebook" width="30" height="30"></a>
+                <a href="#"><img src="../assets/images/twitter.png" alt="Twitter" width="30" height="30"></a>
+                <a href="#"><img src="../assets/images/linkedin.png" alt="LinkedIn" width="30" height="30"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/carousel.js"></script>
+</body>
+
+</html>

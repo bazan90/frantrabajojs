@@ -1,0 +1,541 @@
+/* Estilos básicos */
+body {
+    background-image: url(../assets/header/header-bg.jpg);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background-image: url(../assets/header/joshua-earle-NkEH30uoe8o-unsplash.jpg);
+    color: white;
+    position: fixed;
+    width: 100%;
+    display: flex;
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Asegura que los enlaces se dispongan en línea horizontal */
+    gap: 20px;
+    /* Espacio entre cada enlace */
+}
+
+.navbar-nav li {
+    display: inline;
+    /* Asegura que cada item se muestre en línea */
+}
+
+.navbar-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav a:hover {
+    background-color: #444;
+}
+
+.navbar-nav a.active {
+    background-color: #000000;
+    color: #000cf8;
+}
+
+/* Ajustar el contenedor general */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 70px;
+    /* Añadir espacio debajo de la barra de navegación fija */
+}
+
+.inicio {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #000000;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+h2 {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.servicios {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.servicios h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.servicios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.servicio-item {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #000000;
+    width: 30%;
+    box-sizing: border-box;
+    transition: transform 0.2s ease-in-out;
+}
+
+.servicio-item h3 {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.servicio-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+.servicio-item:hover {
+    transform: scale(1.05);
+}
+
+/* Blog Seccion */
+.blog {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.blog-post {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #000000;
+    text-align: left;
+}
+
+.blog-post img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.blog-post h3 {
+    font-size: 22px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-size: 16px;
+    color: #555;
+}
+
+.read-more {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #0056b3;
+}
+
+/* Comentarios Seccion */
+.comments-section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.comments-section h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.comments {
+    margin-bottom: 20px;
+}
+
+.comment {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.submit-comment {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-comment:hover {
+    background-color: #218838;
+}
+
+.metodos-pago {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.metodos-pago h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.payment-methods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.payment-method {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #000000;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+}
+
+.payment-method img {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+.payment-method h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.payment-method p {
+    font-size: 14px;
+    color: #666;
+}
+
+.preguntas-frecuentes {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+}
+
+.preguntas-frecuentes h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.faq-item {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px #000000;
+}
+
+.faq-item h3 {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* noticias*/
+#contenedor-noticias {
+    background-color: #ffffff;
+    max-width: 1200px;
+    /* Aumentar el ancho máximo del contenedor */
+    margin: 0 auto;
+    /* Centrar el contenedor en la página */
+    padding: 20px;
+    /* Añadir algo de espacio interno */
+    box-shadow: 0 4px 8px #000000;
+    /* Sombra suave */
+    border-radius: 10px;
+    /* Bordes redondeados */
+}
+
+#contenedor-noticias p {
+    color: #000000;
+}
+
+.noticia h3 {
+    color: #000000;
+    margin-top: 0;
+}
+
+
+
+
+.noticia-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.noticia-item a:hover {
+    text-decoration: underline;
+}
+
+footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Estilos básicos galeria */
+
+
+.galeria h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+/* Estilo del carrusel */
+.carousel {
+    position: relative;
+    max-width: 600px;
+    /* Limita el ancho máximo del carrusel */
+    margin: 0 auto;
+    /* Centra el carrusel en la página */
+    overflow: hidden;
+    background-color: #000;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    /* Ajusta la altura máxima */
+    object-fit: cover;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+footer {
+    background-color: #ffffff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+/* Estilos del formulario */
+.presupuesto form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Mensajes de error */
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 5px;
+    display: none;
+}
+
+/* Resultado */
+#resultado {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: green;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+/* Estilo inicial del enlace */
+#aviso-link {
+    color: white;
+    /* Color inicial blanco */
+    text-decoration: none;
+    /* Sin subrayado */
+}
+
+/* Color del enlace cuando se hace clic y se mantiene */
+#aviso-link:active {
+    color: green;
+    /* Cambia a verde cuando se pincha */
+}
+
+#aviso-link:focus {
+    outline: none;
+    color: green;
+
+}
+
+.aviso-legal {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.aviso-legal h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.aviso-legal p {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.aviso-legal h3 {
+    font-size: 20px;
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
