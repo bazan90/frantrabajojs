@@ -70,6 +70,15 @@ function validarFormulario() {
 
     return valid;
 }
+document.getElementById('plazo').addEventListener('input', function() {
+    const plazoInput = document.getElementById('plazo');
+    if (plazoInput.value < 10) {
+        plazoInput.setCustomValidity('El plazo debe ser de al menos 10 días.');
+    } else {
+        plazoInput.setCustomValidity(''); // Borrar cualquier mensaje de error si es válido
+    }
+});
+
 
 // Event Listeners para actualizar el presupuesto dinámicamente
 document.getElementById('producto').addEventListener('change', calcularPresupuesto);
