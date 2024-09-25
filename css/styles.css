@@ -337,6 +337,14 @@ footer .social-links a {
     text-decoration: none;
 }
 
+footer .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Los elementos dentro del footer estarán en una sola columna */
+    justify-items: center;
+    align-items: center;
+}
+
 /* Estilos básicos galeria */
 
 
@@ -475,8 +483,8 @@ h2 {
 /* Resultado */
 #resultado {
     margin-top: 20px;
-    font-size: 1.2rem;
-    color: green;
+    font-size: 20px;
+    color: rgb(0, 140, 255);
     text-align: center;
 }
 
