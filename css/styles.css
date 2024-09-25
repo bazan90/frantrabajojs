@@ -337,6 +337,16 @@ footer .social-links a {
     text-decoration: none;
 }
 
+/* Estilos para las redes sociales */
+footer .social-links {
+    margin-bottom: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    /* Alinea los logos en una fila */
+    gap: 10px;
+    /* Espacio entre los logos */
+}
+
 footer .container {
     display: grid;
     grid-template-columns: 1fr;
